@@ -1,14 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"], // instead of "*", this ensures all HTML files are scanned
+  darkMode: "class", // enable class-based dark mode
+  content: ["./*.html"], // adjust if files are in subfolders
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        sm: "700px",
+      },
+      spacing: {
+        "khan-10": "100px",
+      },
+    },
     container: {
       center: true,
     },
   },
-  plugins: [], // fixed typo: "Plugins" → "plugins"
+  plugins: [],
   corePlugins: {
-    filter: false, // fixed typo: "corePlagins" → "corePlugins"
+    filter: false,
   },
 };

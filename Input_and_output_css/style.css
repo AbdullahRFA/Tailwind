@@ -1,1 +1,6 @@
 @import "tailwindcss";
+@theme{
+    --breakpoint-sm:700px;
+    --padding-khan-10: 100px;
+}
+
